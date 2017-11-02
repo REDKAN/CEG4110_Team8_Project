@@ -1,9 +1,4 @@
 <?php
-/*session_start();
-if (isset($_SESSION['upload_success'])) {
- }
- * 
- */
 include('func/display.php');
 ?>
 <!DOCTYPE html>
@@ -19,16 +14,17 @@ include('func/display.php');
             <header>
             <h1>Food Review</h1>
             </header>
-            <nav>
-  <ul>
-    <li><a href="write.php">Write a Review</a></li>
-    <li><a href="silly.php">Silly</a></li>
+<nav>
+    <ul>
+    <li><a href="index.php">Main page</a></li>
   </ul>
 </nav>
             <?php
-  $files = glob("images/*.*");
-   display_items($files)        
-  ?>
+             $files = glob("silly_img/*.*");
+             display_items($files)
+
+ ?>
+           
 <footer>Copyright &copy; CEG4110_Team8</footer>
 
         </div>
