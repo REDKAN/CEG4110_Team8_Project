@@ -10,10 +10,9 @@ header, footer {
     text-align: center;
 }
 nav {
-    float: right;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
+    float: top;
+    max-width: 100%
+    //padding: 1em;
 }
 nav ul {
     list-style-type: none;

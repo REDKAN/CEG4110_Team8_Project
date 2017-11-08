@@ -1,4 +1,5 @@
 <?php
+session_start();
 /*session_start();
 if (isset($_SESSION['upload_success'])) {
  }
@@ -11,8 +12,9 @@ include('func/display.php');
     <head>
         <meta charset="UTF-8">
         <title>Food_Reviewer</title>
-        <link rel="stylesheet" href="css/normalize.css"> 
-        <link rel="stylesheet" href="css/main.css"> 
+        <link rel="stylesheet" href="http://localhost/CEG4110_Project/css/normalize.css"> 
+        <link rel="stylesheet" href="http://localhost/CEG4110_Project/css/main.css"> 
+        <base href="http://localhost/CEG4110_Project/index.php">
      </head>
  <body>
         <div class="container">
@@ -21,14 +23,19 @@ include('func/display.php');
             </header>
             <nav>
   <ul>
-    <li><a href="write.php">Write a Review</a></li>
+      <li><a href="write.php">Upload an image</a></li><br>
     <li><a href="silly.php">Silly</a></li>
   </ul>
 </nav>
-            <?php
-  $files = glob("images/*.*");
-   display_items($files)        
+ 
+  <?php
+  $files = glob("funcimages/*.*");
+  //display images as descending order
+  rsort($files);
+ //call display function to display images
+  display_items($files);      
   ?>
+            
 <footer>Copyright &copy; CEG4110_Team8</footer>
 
         </div>
