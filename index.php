@@ -23,8 +23,8 @@ include('func/display.php');
             </header>
             <nav>
   <ul>
-      <li><a href="write.php">Upload an image</a></li><br>
-    <li><a href="silly.php">Silly</a></li>
+      <li><a href="func/write.php">Upload an image</a></li><br>
+      <li><a href="silly.php">Silly</a></li>
   </ul>
 </nav>
  
