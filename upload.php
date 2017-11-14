@@ -68,7 +68,7 @@
 	          // upload is done and redirect to the main page
                              if(isset($_POST['submit']) && !$error) 
                              {
-                                        echo "The image score is ".$contents;
+                                        echo "The image score is ".$contents."and it should go to the food page.";
                                         header("Refresh: 2;url=index.php");
                              }
 ?>
