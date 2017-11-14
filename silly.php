@@ -1,5 +1,5 @@
 <?php
-include('func/display.php');
+include('display.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,7 +19,7 @@ include('func/display.php');
     <li><a href="index.php">Main page</a></li>
   </ul>
 </nav>
-            <?php
+<?php
              $files = glob("silly_img/*.*");
              display_items($files)
 
