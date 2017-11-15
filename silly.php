@@ -12,7 +12,7 @@ include('display.php');
  <body>
         <div class="container">
             <header>
-            <h1>Food Review</h1>
+            <h1>Bon Appetit</h1>
             </header>
 <nav>
     <ul>
@@ -21,11 +21,12 @@ include('display.php');
 </nav>
 <?php
              $files = glob("silly_img/*.*");
+             //Sort - display images as descending order
+             rsort($files);
              display_items($files)
- ?>
-           
-<footer>Copyright &copy; CEG4110_Team8</footer>
 
-        </div>
+ ?>
+<footer>Copyright &copy; CEG4110_Team8</footer>
+     </div>
     </body>
     </html>

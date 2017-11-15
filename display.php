@@ -20,7 +20,7 @@
                         </div>
 CONTENT;
             }
-            /* txt area 
+            /* put this 
              *  <!-- <div class="desc">Restaurant: <br>
                                                        Location: <br>
                                                        Review:
