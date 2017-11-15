@@ -22,7 +22,6 @@ include('display.php');
 <?php
              $files = glob("silly_img/*.*");
              display_items($files)
-
  ?>
            
 <footer>Copyright &copy; CEG4110_Team8</footer>

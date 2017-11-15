@@ -25,7 +25,7 @@ include('display.php');
  
   <?php
   //read img files food_imgs
- $files = glob("main_img/*.*");
+  $files = glob("main_img/*.*");
   //display images as descending order
   rsort($files);
  //call display function to display images
