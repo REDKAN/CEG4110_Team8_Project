@@ -66,7 +66,7 @@
                             // upload is done and redirect to the main page
                             if(isset($_POST['submit']) && !$error) 
                             {
-                                     echo "The image score is ".$contents;
+                                    echo " <p> <font color=red font face='arial' size='15pt'>The image score is $contents</font></p>";
                                     //header("Refresh: 2;url=index.php");
                              }
 							 
