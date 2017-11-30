@@ -21,6 +21,13 @@ session_start();
 </nav>
 <form action="upload.php" method="post" autocomplete="on" enctype="multipart/form-data">
 <table>
+ <?php
+   /* Bug 2 Review form - this form does not save into the file
+   <tr><td> Restaurant Name: <input name="r_name" type="text"></td></tr>
+   <tr><td> Location: <input name="loc" type="text"></td></tr>
+   <tr><td> Review: <textarea name="review" sieze ="40" laxlength=" 100" type="text"></textarea></td></tr><br><br>
+   */
+ ?>
  	<tr><td><input type="file" name="image"></td></tr>
  	<tr><td><input name="submit" type="submit" value="Upload image">
        </td></tr>
