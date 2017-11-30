@@ -21,12 +21,12 @@ include('display.php');
 </nav>
 <?php
              $files = glob("silly_img/*.*");
-             //Sort - display images as descending order
-             rsort($files);
-             display_items($files)
+			 //Sort - display images as descending order
+			 rsort($files);
+             s_display_items($files)
 
  ?>
 <footer>Copyright &copy; CEG4110_Team8</footer>
-     </div>
+    </div>
     </body>
     </html>
